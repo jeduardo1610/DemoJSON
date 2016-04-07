@@ -7,10 +7,49 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.m14x.demojson.MainActivity">
+    tools:context="com.example.m14x.demojson.MainActivity"
+    android:background="@drawable/background">
+
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Enter a City"
+        android:id="@+id/cityTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityName"
+        android:layout_below="@+id/cityTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What&apos;s the weather?"
+        android:id="@+id/weatherButton"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cityName"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherInformation"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF" />
+
 </RelativeLayout>
