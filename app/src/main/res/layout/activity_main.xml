@@ -3,14 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+
     tools:context="com.example.m14x.demojson.MainActivity"
     android:background="@drawable/background">
 
-
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,10 +48,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/weatherInformation"
+        android:layout_below="@+id/weatherButton"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="120dp"
-        android:textSize="20sp"
-        android:textColor="#FFFFFF" />
+        android:layout_marginTop="50dp" />
 
+</RelativeLayout>
+</ScrollView>
 </RelativeLayout>
